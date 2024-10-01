@@ -1,0 +1,60 @@
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body{
+    display: flex;
+    
+    font-family: 'Manrope', monospace ;
+    background-color: var(--Dark-Blue);
+    padding-top: 19.5vh;
+    /* padding-left: 28vh;
+    padding-right: 28vh; */
+}
+main{
+    /* position: relative; */
+    box-sizing: border-box;
+    padding: 32px;
+    margin: auto;
+    width: 480px;
+    /* max-width: 38.5vw; */
+    min-height: 30vh;
+    background-color: var(--Dark-Grayish-Blue);
+    color: var(--Light-Cyan);
+    border-radius: 8px;
+    text-align: center;
+}
+button{
+    position: absolute;
+    /* bottom: -60px; */
+    transform: translateX(-50%);
+    /* inset: 0; */
+    /* margin: auto; */
+    background-color: var(--Neon-Green);
+    align-content: end;    border-width: 0;
+    border-radius: 50%;
+    padding: 14px 17px;
+}
+div{
+    margin-bottom: 30px;
+}
+div img{
+    width: 100%;
+}
+button img{
+    padding-top: 3px;
+}
+button:hover{
+    box-shadow: aqua 3px;
+}
+.idPreText{
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: var(--Neon-Green);
+}
