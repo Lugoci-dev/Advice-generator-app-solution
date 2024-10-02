@@ -8,15 +8,18 @@
 }
 
 body{
+    box-sizing: border-box;
+    margin: 0;
     display: flex;
     align-items: center;
     font-family: 'Manrope', monospace;
     font-size: 2rem;
     font-weight: 800;
     background-color: var(--Dark-Blue);
-    padding-top: 19.5vh;
+    /* padding-top: 19.5vh; */
     margin-left: 16px;
     margin-right: 16px;
+    height: 100vh;
 
 }
 main{
