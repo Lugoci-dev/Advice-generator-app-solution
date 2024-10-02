@@ -1,11 +1,25 @@
+const button = document.querySelector('button');
 
-const id = 117;
+const apiUrl = 'https://api.adviceslip.com/advice';
+let content = "It is easy to sit up and take notice, what's difficlut is getting un and takeing action";
+let id = 117;
 
-const content = "It is easy to sit up and take notice, what's difficlut is getting un and takeing action";
+const response = async()=>{
+    try{
+        const data = await fetch(apiUrl, { cache: 'no-cache' } );
+        const JsonResponse = await data.json();
+        reportResults(JsonResponse);
+    }catch(error){
+        alert(error);
+    }
+}
 
-const button = document.addEventListener('click', search);
+function reportResults(json){
+    id = json.slip.id;
+    content = json.slip.advice;
 
-function search(){
     window.idText.innerText = `${id}`
     window.idContent.innerText = `${content}`
 }
+
+button.addEventListener('click', response);
