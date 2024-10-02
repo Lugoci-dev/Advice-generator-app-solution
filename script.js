@@ -7,6 +7,9 @@ let id = 117;
 const response = async()=>{
     try{
         const data = await fetch(apiUrl, { cache: 'no-cache' } );
+        if(!data){
+            alert('loading')
+        }
         const JsonResponse = await data.json();
         reportResults(JsonResponse);
     }catch(error){

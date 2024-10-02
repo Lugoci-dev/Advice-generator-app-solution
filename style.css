@@ -9,7 +9,6 @@
 
 body{
     display: flex;
-    
     font-family: 'Manrope', monospace;
     font-size: 2rem;
     font-weight: 800;
@@ -58,7 +57,7 @@ button:hover{
     color: var(--Neon-Green);
 }
 
-@media(min-width: 500px){
+/* @media (min-width: 599px){
     .mobile{
         display: block;
     }
@@ -73,4 +72,4 @@ button:hover{
     .desktop{
         display: block;
     }
-}
+} */
